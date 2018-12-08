@@ -213,7 +213,7 @@ export class HomePage {
 	      // Get age
 	      this.analysis.push(getAnalysisObject("Age", attributes['age']));
 
-	      // Get gender
+	      // Get age
 	      this.analysis.push(getAnalysisObject("Gender", capitalizeFirstLetter(attributes['gender'])));
 
 	      // Get smiling (person is smiling if value is over 0.5)
@@ -236,7 +236,7 @@ export class HomePage {
 	                  greatestEmotionValue = moods[mood];
 	            }
 	      }
-	      this.analysis.push(getAnalysisObject("You're feeling", capitalizeFirstLetter(greatestEmotion)));
+	      this.analysis.push(getAnalysisObject("Emotion", capitalizeFirstLetter(greatestEmotion)));
 
 	}
 
