@@ -1,8 +1,8 @@
 {
   "name": "esper",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "version": "0.1.0",
+  "author": "Jay Pineda",
+  "homepage": "https://github.com/aicxe/",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",
@@ -36,7 +36,7 @@
     "@ionic/app-scripts": "3.2.1",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project",
+  "description": "A technical demonstration of Azure's cognitive service API",
   "cordova": {
     "plugins": {
       "cordova-plugin-camera": {}

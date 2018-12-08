@@ -147,7 +147,8 @@ export class HomePage {
 	public analyzeViaAzure(link:string, analysisCallback:Function = null, failureCallback:Function = null):void {
 	      // This is a subfunction that converts an object into a serialized URL format.
 	      // For instance, { 'foo': 'bar' } becomes 'foo=bar'
-	      let serialize:string = (parameters:object) => Object.keys(parameters).map(key => key + '=' + parameters[key]).join('&');
+	      // let serialize:string = (parameters:object) => Object.keys(parameters).map(key => key + '=' + parameters[key]).join('&');
+	      let serialize = (parameters:object) => Object.keys(parameters).map(key => key + '=' + parameters[key]).join('&');
 
 	      // Tell the server that we are querying/looking for a specific set of face data,
 	      // and want it in the appropriate format.
@@ -201,12 +202,15 @@ export class HomePage {
 
 	      // Convert two strings into a key-value pair for our
 	      // analysis list.
-	      let getAnalysisObject:object = (feature, value) => {
+	      //let getAnalysisObject:object = (feature, value) => {
+	      let getAnalysisObject = (feature, value) => {
 	            return { "feature": feature, "value": value };
 	      }
 
 	      // Converts 'john' into 'John'
-	      let capitalizeFirstLetter:string = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+	      //let capitalizeFirstLetter:string = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+	      let capitalizeFirstLetter = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+
 
 	      //
 	      // ~ Analysis Time ~
