@@ -33,3 +33,12 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+# From previous .gitignore files
+**/bower_components 
+lib/**
+*.log
+
+# Custom files created by Jay
+.env
+DEVNOTES
