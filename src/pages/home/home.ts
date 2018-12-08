@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+
+
 /* Import camera as well */  
 import { Camera, CameraOptions } from '@ionic-native/camera';
 
