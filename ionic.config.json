@@ -1,5 +1,7 @@
 {
   "name": "esper",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

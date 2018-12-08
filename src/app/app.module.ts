@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+/* Import camera */ import { Camera, CameraOptions } from '@ionic-native/camera';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
@@ -24,6 +26,7 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    Camera, /* Tell the app that Camera provides a global functionality. This is an Angular quirk.*/
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
